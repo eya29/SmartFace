@@ -1,0 +1,204 @@
+<div class="row">
+  <div class="col-lg-4 col-md-4 col-sm-12">
+    <div class="card card-stats">
+      <div class="card-body ">
+        <div class="row">
+          <div class="col-5 col-md-4">
+            <!-- <div class="icon-big text-center icon-warning">
+              <i class="text-warning"></i>
+            </div> -->
+          </div>
+          <div class="col-12">   
+            <!-- col-7 col-md-8 -->
+            <div class="numbers">
+              <p class="card-category">Number of Employees</p>
+              <p class="card-title">200
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer ">
+        <hr>
+        <div class="stats">
+          <i class="fa fa-refresh"></i> Last month
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-12">
+    <div class="card card-stats">
+      <div class="card-body ">
+        <div class="row">
+          <div class="col-5 col-md-4">
+            <!-- <div class="icon-big text-center icon-warning">
+              <i class="nc-icon nc-money-coins text-success"></i>
+            </div> -->
+          </div>
+          <div class="col-12">
+            <div class="numbers">
+              <p class="card-category">Number of Visitors</p>
+              <p class="card-title">400
+                <p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer ">
+        <hr>
+        <div class="stats">
+          <i class="fa fa-calendar-o"></i> Last day
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-12">
+    <div class="card card-stats">
+      <div class="card-body ">
+        <div class="row">
+          <div class="col-5 col-md-4">
+            <!-- <div class="icon-big text-center icon-warning">
+              <i class="nc-icon nc-vector text-danger"></i>
+            </div> -->
+          </div>
+          <div class="col-12">
+            <div class="numbers">
+              <p class="card-category">Number of unknown</p>
+              <p class="card-title">20
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer ">
+        <hr>
+        <div class="stats">
+          <i class="fa fa-clock-o"></i> Last day
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12">
+  <div class="card" style=" background-color: #f8d7da; 
+  color: #721c24;  ">
+    <div class="card-header">
+      <h4 class="card-title"> Late Employees  </h4>
+    </div>
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table">
+          <thead class=" text">
+            
+            <th>
+              Full name
+            </th>
+            <th>
+              Address mail
+            </th>
+            <th>
+              Titre
+            </th>
+            <th >
+              Arrived time
+            </th>
+            <th >
+              Supposed time
+            </th>
+          
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                Eya younes
+              </td>
+         
+              <td>
+                eyaygmail.com
+              </td>
+              <td >
+                stagiaire
+              </td>
+              <td >
+                09.30
+              </td>
+              <td >
+                09.00
+              </td>
+            </tr>
+          
+          </tbody>
+        </table>
+      </div>
+    </div>
+     <div class="card-footer ">
+        <hr>
+        <div class="stats">
+          <i class="fa fa-history"></i> Updated 10 minutes ago
+        </div>
+      </div>
+  </div>
+</div>
+
+
+ 
+
+
+</div>
+<div class="row">
+  <div class="col-md-4">
+    <div class="card ">
+      <div class="card-header ">
+        <h5 class="card-title">People</h5>
+        <p class="card-category"></p>
+      </div>
+      <div class="card-body ">
+        <canvas id="chartEmail"></canvas>
+      </div>
+      <div class="card-footer ">
+        <div class="legend">
+          <i class="fa fa-circle text-primary"></i> Employees
+          <i class="fa fa-circle text-warning"></i> Visitors
+          <i class="fa fa-circle text-danger"></i> Unknown
+         
+        </div>
+        <hr>
+        <div class="stats">
+          <i class="fa fa-calendar"></i> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-8">
+    <div class="card card-chart">
+      <div class="card-header">
+        <h5 class="card-title">User Review</h5>
+        
+        <div class="form-group">
+          <!-- <label for="employeeSelect">Employees</label> -->
+          <select id="employeeSelect" class="form-control" (change)="onEmployeeChange($event)">
+            <option value="" disabled selected>Select an employee</option>
+            <option *ngFor="let employee of employees" [value]="employee">
+              {{ employee }}
+            </option>
+          </select>
+        </div>
+        <!-- <p class="card-category">Selected Employee: {{ selectedEmployee }}</p> -->
+      </div>
+      <div class="card-body">
+        <canvas id="speedChart" width="400" height="100"></canvas>
+      </div>
+      <div class="card-footer">
+        <div class="chart-legend">
+          <i class="fa fa-circle text-warning"></i> Arrived time
+        </div>
+        <hr />
+        <div class="card-stats">
+          <i class="fa fa-check"></i> Data information certified
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+

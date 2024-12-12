@@ -1,0 +1,55 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "employees": [
+    {
+      "picture": null,
+      "fullName": "mike",
+      "phoneNumber": "28632741",
+      "email": "mike@gmaail.com",
+      "post": "ingenieur",
+      "id": "e669"
+    },
+    {
+      "picture": null,
+      "fullName": "eya",
+      "phoneNumber": "52244735",
+      "email": "eya@gmail.com",
+      "post": "developpeur",
+      "id": "e5c5"
+    },
+    {
+      "id": "e6bb",
+      "picture": null,
+      "fullName": "tesnim",
+      "phoneNumber": "25874136",
+      "email": "tesnim@gmail.com",
+      "post": "designer"
+    }
+  ]
+}
